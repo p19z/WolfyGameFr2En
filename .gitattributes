@@ -1,0 +1,44 @@
+# default .gitattributes v0.2001.0.0 -----------------------------------
+
+# We use CRLF line ending on Windows and LF line endings on Unix-like
+# systems. Constraints may be applied for specific files further below.
+
+* text=auto
+
+# When using text editors on Windows, the .gitattributes and .gitignore
+# files are often created with CRLF line endings in the first place.
+# + REMARK: Those configuration files can be located in subdirectories.
+
+/.gitattributes text=auto
+/.gitignore text=auto
+.gitattributes text=auto
+.gitignore text=auto
+
+# Having tools automatically generate the .gitmodules file with LF line
+# endings, and not specifying here that this is expected, would cause
+# warnings upon all checkins on Windows, until an explicit checkout is
+# performed. Although those warnings would be harmless, and that finally
+# having, at some point, the .gitmodules file checked out with CRLF line
+# endings on Windows, we still favor the standard, Unix-style, format.
+# + REMARK: Those configuration files can be located in subdirectories.
+
+/.gitmodules text eol=lf
+.gitmodules text eol=lf
+
+# Do not modify line ending of typical Unix-style scripts bash scripts.
+
+*.pl text eol=lf
+*.sh text eol=lf
+
+# Do not modify line ending of standard shell outputs and error outputs.
+
+*.sh.stderr text eol=lf
+*.sh.stdout text eol=lf
+
+# Do not modify line ending of typical Microsoft Windows-only files.
+
+*.au3 text eol=crlf
+
+# end default .gitattributes v0.2001.0.0 -------------------------------
+
+*.svg -text
